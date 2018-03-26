@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.2</TargetFramework>
+    <AssemblyName>MedZiane.Goodies</AssemblyName>
+    <RootNamespace>MedZiane.Goodies</RootNamespace>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+    <Authors>Med Ziane</Authors>
+    <Product>Goodies</Product>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Description>A .NET library providing tools helpful for the development community.</Description>
+    <Copyright>© 2018 Med Ziane</Copyright>
+    <PackageIconUrl>http://madmed.com/favicon.ico</PackageIconUrl>
+    <RepositoryType>git</RepositoryType>
+    <AssemblyVersion>1.0.*</AssemblyVersion>
+    <PackageLicenseUrl>https://github.com/medziane/goodies/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/medziane/goodies</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/medziane/goodies</RepositoryUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard1.2\MedZiane.Goodies.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard1.2\MedZiane.Goodies.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+
+</Project>
