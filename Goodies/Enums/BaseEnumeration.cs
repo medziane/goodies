@@ -8,6 +8,7 @@ namespace MedZiane.Goodies.Enums
 {
     /// <summary>
     /// An abstract base enumeration that implements comparison and equality.
+    /// Source: https://github.com/henrikfroehling/TraktApiSharp/blob/next-version/Source/Lib/TraktApiSharp/Enums/TraktEnumeration.cs
     /// </summary>
     public abstract class BaseEnumeration : IComparable<BaseEnumeration>, IEquatable<BaseEnumeration>
     {
